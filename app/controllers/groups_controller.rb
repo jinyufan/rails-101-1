@@ -33,7 +33,7 @@ class GroupsController < ApplicationController
      else
        render :edit
      end
-   end 
+   end
 
    end
 
@@ -49,5 +49,4 @@ class GroupsController < ApplicationController
     def group_params
       params.require(:group).permit(:title, :description)
     end
-
-end
+  
