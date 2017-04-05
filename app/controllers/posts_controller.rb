@@ -18,7 +18,11 @@ class PostsController < ApplicationController
     else
       render :new
     end
-end
+ end
+   def edit
+     @post = Post.find(params[:id])
+   end 
+
     private
 
     def post_params
